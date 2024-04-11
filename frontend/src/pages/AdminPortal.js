@@ -6,6 +6,7 @@ import SidebarCustom from "../components/SidebarCustom";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import EditDelete from "../components/EditDelete";
+import CardSkeletonUser from "../components/CardSkeletonUser"
 
 export default function AdminPortal() {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ export default function AdminPortal() {
       }
       if (!response.ok) {
         setUserData({ id: false });
+        navigate("/login");
         console.log("this is running");
         return;
       }
@@ -93,7 +95,9 @@ export default function AdminPortal() {
             ))}
           </div>
         </div>
-      ): navigate("/")}
+      ): (<h4 className="text-center text-danger">Loading {" "} <div class="spinner-border text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div></h4>)}
     </div>
   );
 }
