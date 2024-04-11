@@ -56,7 +56,7 @@ public class TourService {
 
 	}
 
-	public List<Tour> findAllForClient(String token) {
+	public List<Tour> findAllForClient() {
 		return repo.findAll();
 
 	}

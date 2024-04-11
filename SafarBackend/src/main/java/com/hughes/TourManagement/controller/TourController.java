@@ -39,8 +39,8 @@ public class TourController {
 	}
 	
 	@GetMapping("/displayAllForClient")
-	public List<Tour> displayAllForClient(@RequestHeader("token") String token){
-		return tservice.findAllForClient(token);
+	public List<Tour> displayAllForClient(){
+		return tservice.findAllForClient();
 	}
 	
 	@GetMapping("/display/{id}")
