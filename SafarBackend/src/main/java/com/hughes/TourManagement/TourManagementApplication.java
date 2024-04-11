@@ -8,7 +8,6 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-@CrossOrigin(origins = "https://safar-seven.vercel.app")
 public class TourManagementApplication {
 
 	public static void main(String[] args) {
