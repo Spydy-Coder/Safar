@@ -13,7 +13,7 @@ export default function CardSkeleton() {
         <Skeleton height={"100%"} width={"100%"} />
       </div>
       <div className="col-12 col-md-7 d-flex align-items-center flex-column justify-content-center">
-        <div className="card ms-3" style={{ width: "100%", height: "60vh" }}>
+        <div className="card ms-3 me-sm-2" style={{ width: "100%", height: "60vh" }}>
           <div className="row g-0">
             <div className="col-md-8 p-3 d-flex flex-column gap-2">
               <Skeleton height={30} width={200} />
