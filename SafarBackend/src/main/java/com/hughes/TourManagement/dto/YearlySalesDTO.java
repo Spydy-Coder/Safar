@@ -1,4 +1,4 @@
-package com.hughes.dto;
+package com.hughes.TourManagement.dto;
 
 import java.math.BigDecimal;
 

@@ -11,13 +11,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.hughes.TourManagement.dto.AdminStatsDTO;
+import com.hughes.TourManagement.dto.MonthlySalesDTO;
+import com.hughes.TourManagement.dto.TourSalesDTO;
+import com.hughes.TourManagement.dto.YearlySalesDTO;
 import com.hughes.TourManagement.model.Admin;
 import com.hughes.TourManagement.repository.AdminRepository;
 import com.hughes.TourManagement.repository.BookingRepository;
-import com.hughes.dto.AdminStatsDTO;
-import com.hughes.dto.MonthlySalesDTO;
-import com.hughes.dto.TourSalesDTO;
-import com.hughes.dto.YearlySalesDTO;
 
 @Service
 public class StatsService {

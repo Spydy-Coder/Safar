@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hughes.TourManagement.dto.AdminStatsDTO;
 import com.hughes.TourManagement.service.StatsService;
-import com.hughes.dto.AdminStatsDTO;
 
 @RestController
 @CrossOrigin(origins = "https://safar-seven.vercel.app/")
