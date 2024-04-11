@@ -13,7 +13,7 @@ const ShowBooking = () => {
 
     const fetchData = async () => {
       const response = await fetch(
-        `http://safar-production.up.railway.app/api/booking/getorder/${tourId}`,
+        `https://safar-1.onrender.com/api/booking/getorder/${tourId}`,
         {
           method: "GET",
           headers: {
@@ -40,7 +40,7 @@ const ShowBooking = () => {
     const fetchUserData = async () => {
       try {
         const response = await fetch(
-          `http://safar-production.up.railway.app/api/pin/display/${tourId}`,
+          `https://safar-1.onrender.com/api/pin/display/${tourId}`,
           {
             method: "GET",
             headers: {

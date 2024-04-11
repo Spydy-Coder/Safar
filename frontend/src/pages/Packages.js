@@ -13,7 +13,7 @@ export default function Packages() {
   useEffect(() => {
     const fetchPin = async () => {
       const response = await fetch(
-        "http://safar-production.up.railway.app/api/pin/displayAllForClient",
+        "https://safar-1.onrender.com/api/pin/displayAllForClient",
         {
           method: "GET",
           headers: {

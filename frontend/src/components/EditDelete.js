@@ -7,7 +7,7 @@ export default function EditDelete({ data }) {
     try {
       // Make API call to delete the element
       const response = await fetch(
-        `http://safar-production.up.railway.app/api/pin/delete/${data.tourId}`,
+        `https://safar-1.onrender.com/api/pin/delete/${data.tourId}`,
         {
           method: "DELETE",
           headers: {

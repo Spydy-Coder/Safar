@@ -18,7 +18,7 @@ export default function Tour() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://safar-production.up.railway.app/api/pin/display/${tourId}`,
+          `https://safar-1.onrender.com/api/pin/display/${tourId}`,
           {
             method: "GET",
             headers: {

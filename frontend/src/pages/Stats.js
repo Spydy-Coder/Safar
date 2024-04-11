@@ -12,7 +12,7 @@ const Stats = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch("http://safar-production.up.railway.app/api/stats/earnings", {
+    fetch("https://safar-1.onrender.com/api/stats/earnings", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

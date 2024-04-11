@@ -24,7 +24,7 @@ export default function EditForm() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://safar-production.up.railway.app/api/pin/display/${id}`,
+          `https://safar-1.onrender.com/api/pin/display/${id}`,
           {
             method: "GET",
             headers: {
@@ -82,7 +82,7 @@ export default function EditForm() {
       const timestamp = new Date().toISOString();
       const updatedData = { ...formData, timestamp };
 
-      const response = await fetch(`http://safar-production.up.railway.app/api/pin/edit/${id}`, {
+      const response = await fetch(`https://safar-1.onrender.com/api/pin/edit/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
