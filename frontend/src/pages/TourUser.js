@@ -19,7 +19,7 @@ export default function TourUser() {
   const { tourId } = useParams(); // Assuming you're using React Router's useParams hook
   const [person, setPerson] = useState(1);
   const token = localStorage.getItem("token");
-  const role=localStorage.getItem("role")
+  const role = localStorage.getItem("role");
 
   const handleIncrement = () => {
     setPerson(person + 1);
@@ -32,31 +32,29 @@ export default function TourUser() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      const fetchData = async () => {
-        try {
-          const response = await fetch(
-            `http://localhost:8080/api/pin/display/${tourId}`,
-            {
-              method: "GET",
-              headers: {
-                "Content-Type": "application/json",
-                token: localStorage.getItem("token"), // Replace 'your_access_token' with your actual token
-              },
-            }
-          );
-          if (!response.ok) {
-            throw new Error("Failed to fetch data");
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:8080/api/pin/display/${tourId}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              token: localStorage.getItem("token"), // Replace 'your_access_token' with your actual token
+            },
           }
-          const jsonData = await response.json();
-          setData(jsonData);
-          setLoading(false);
-        } catch (error) {
-          console.error("Error fetching data:", error);
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
         }
-      };
-      fetchData();
-    }, 2000);
+        const jsonData = await response.json();
+        setData(jsonData);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
   }, []);
 
   const sendOrder = async () => {
@@ -94,17 +92,15 @@ export default function TourUser() {
   };
 
   const handleBuy = async () => {
-    if (token && role==='client') {
+    if (token && role === "client") {
       sendOrder();
-    }
-    else if(token && role!=='client') {
+    } else if (token && role !== "client") {
       Swal.fire({
         icon: "info",
         title: "Login",
         text: "Please Login as Client!",
       });
-    }
-    else {
+    } else {
       navigate("/clientlogin");
     }
   };

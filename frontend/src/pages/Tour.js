@@ -15,32 +15,30 @@ export default function Tour() {
   const { tourId } = useParams(); // Assuming you're using React Router's useParams hook
 
   useEffect(() => {
-    setTimeout(() => {
-      const fetchData = async () => {
-        try {
-          const response = await fetch(
-            `http://localhost:8080/api/pin/display/${tourId}`,
-            {
-              method: "GET",
-              headers: {
-                "Content-Type": "application/json",
-                token: localStorage.getItem("token"), // Replace 'your_access_token' with your actual token
-              },
-            }
-          );
-          if (!response.ok) {
-            throw new Error("Failed to fetch data");
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:8080/api/pin/display/${tourId}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              token: localStorage.getItem("token"), // Replace 'your_access_token' with your actual token
+            },
           }
-          const jsonData = await response.json();
-          setData(jsonData);
-          setLoading(false);
-        } catch (error) {
-          console.error("Error fetching data:", error);
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
         }
-      };
+        const jsonData = await response.json();
+        setData(jsonData);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
-      fetchData(); // Call the fetchData function
-    }, 2000);
+    fetchData(); // Call the fetchData function
   }, []);
   const formatTimestamp = (timestamp) => {
     if (!timestamp) return "";

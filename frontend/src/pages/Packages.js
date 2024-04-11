@@ -11,34 +11,32 @@ export default function Packages() {
   const [Tour, setTour] = useState(null);
 
   useEffect(() => {
-    setTimeout(() => {
-      const fetchPin = async () => {
-        const response = await fetch(
-          "http://localhost:8080/api/pin/displayAllForClient",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              token: localStorage.getItem("token"),
-            },
-          }
-        );
-        // console.log(response);
-        const contentType = response.headers.get("content-type");
-        if (!contentType || !contentType.includes("application/json")) {
-          return;
+    const fetchPin = async () => {
+      const response = await fetch(
+        "http://localhost:8080/api/pin/displayAllForClient",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            token: localStorage.getItem("token"),
+          },
         }
-        if (!response.ok) {
-          setTour({ tourId: false });
-          console.log("this is running");
-          return;
-        }
-        const json = await response.json();
-        setLoading(false);
-        setTour(json);
-      };
-      fetchPin();
-    }, 1000);
+      );
+      // console.log(response);
+      const contentType = response.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        return;
+      }
+      if (!response.ok) {
+        setTour({ tourId: false });
+        console.log("this is running");
+        return;
+      }
+      const json = await response.json();
+      setLoading(false);
+      setTour(json);
+    };
+    fetchPin();
   }, []);
   return (
     <div className="container packages">
