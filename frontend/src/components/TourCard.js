@@ -23,7 +23,7 @@ export default function TourCard({ data }) {
   return (
     <div>
       <div
-        className="card my-3 tourcard"
+        className="card my-3 tourcard me-2 me-sm-0"
         data-aos="fade-right"
         data-aos-duration="600"
         style={{ maxWidth: "100vw" }}

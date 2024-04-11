@@ -68,7 +68,7 @@ export default function CreateForm() {
   };
 
   return (
-    <div className="create-form p-3">
+    <div className="create-form p-3 mx-2 mx-md-0">
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-3">
           <label htmlFor="name" className="mb-2">
@@ -184,7 +184,7 @@ export default function CreateForm() {
           <button type="submit" className="btn form-button">
             Submit
           </button>
-          <button type="reset" class="btn form-button" onClick={handleClear}>
+          <button type="reset" className="btn form-button" onClick={handleClear}>
             Clear
           </button>
         </div>

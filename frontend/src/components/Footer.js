@@ -47,18 +47,18 @@ export default function Footer() {
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Products</h6>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Angular
+                  <a href="/packages" className="text-reset">
+                    Trips
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    React
+                  <a href="/packages" className="text-reset">
+                    Packages
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Laravel
+                  <a href="/login" className="text-reset">
+                    Hosting
                   </a>
                 </p>
               </div>
@@ -76,7 +76,7 @@ export default function Footer() {
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
+                  <a href="https://bikashdalaiportfolio.netlify.app/" target="_blank" className="text-reset">
                     Help
                   </a>
                 </p>
@@ -101,7 +101,7 @@ export default function Footer() {
 
         <div className="text-center p-3 copyright" >
           © 2024 Copyright:
-          <a className="text-white ms-1 fw-bold" href="https://mdbootstrap.com/">
+          <a className="text-white ms-1 fw-bold" href="https://www.linkedin.com/in/bikash-chandra-dalai-572560203/" target="_blank">
              safar.com
           </a>
         </div>

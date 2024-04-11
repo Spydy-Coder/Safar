@@ -109,7 +109,7 @@ export default function EditForm() {
   };
 
   return (
-    <div className="edit-form p-3">
+    <div className="edit-form p-3 mx-2 mx-md-0">
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-3">
           <label htmlFor="name" className="mb-2">
@@ -230,7 +230,7 @@ export default function EditForm() {
             Update
           </button>
 
-          <button type="reset" class="btn form-button" onClick={handleClear}>
+          <button type="reset" className="btn form-button" onClick={handleClear}>
             Clear
           </button>
         </div>

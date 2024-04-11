@@ -3,3 +3,11 @@
     letter-spacing: 2px;
 }
 
+@media (max-width:600px){
+    th{
+        font-size: 15px;
+    }
+    td{
+        font-size: 15px;
+    }
+}

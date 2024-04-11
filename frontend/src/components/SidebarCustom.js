@@ -13,21 +13,21 @@ const SidebarCustom = () => {
           to="/admin/dashboard"
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          <li className="list-group-item d-flex gap-2">
+          <li className="list-group-item d-flex gap-2" key={1}>
             <RiDashboardFill className="icons" />
 
             <h5 className="text-muted">Dashboard</h5>
           </li>
         </Link>
         <Link to="/create" style={{ textDecoration: "none", color: "inherit" }}>
-          <li className="list-group-item d-flex gap-2">
+          <li className="list-group-item d-flex gap-2" key={2}>
             <IoAddCircleSharp className="icons" />
 
             <h5 className="text-muted">Create</h5>
           </li>
         </Link>
         <Link to="/stats" style={{ textDecoration: "none", color: "inherit" }}>
-          <li className="list-group-item d-flex gap-2">
+          <li className="list-group-item d-flex gap-2" key={3}>
             <ImStatsBars className="icons" />
 
             <h5 className="text-muted">Stats</h5>

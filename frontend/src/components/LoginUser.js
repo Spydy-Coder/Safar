@@ -37,10 +37,10 @@ function LoginUser() {
     }
   };
   return (
-    <div class="con">
-      <div class="video">
+    <div className="con">
+      <div className="video">
         <video
-          class="sub-container"
+          className="sub-container"
           autoPlay
           muted
           loop
@@ -48,12 +48,12 @@ function LoginUser() {
           src={video}
           type="video/mp4"
         />
-        <div class="button-container">
+        <div className="button-container">
           <h3 className="text-uppercase login-heading">User Login Page</h3>
           <div className="p-5">
             <img src={logo} alt="This is the logo" width="130px" />
           </div>
-          <div class="shadow-2xl">
+          <div className="shadow-2xl">
             <GoogleLogin
               onSuccess={afterLogin}
               onError={() => {

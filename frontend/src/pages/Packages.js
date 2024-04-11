@@ -59,7 +59,7 @@ export default function Packages() {
                   to={`/touruser/${data.tourId}`}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <TourCardUser data={data} />
+                  <TourCardUser data={data} key={index} />
                 </Link>
               </div>
             ))}

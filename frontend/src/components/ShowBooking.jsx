@@ -67,7 +67,8 @@ const ShowBooking = () => {
       <Navbar />
 
       {booking.length >= 1 ? (
-        <table className="table  table-hover ">
+        <div className="table-responsive">
+        <table className=" table table-hover ">
           <thead>
             <tr className="table-danger border-1">
               <th scope="col">Booking ID</th>
@@ -95,6 +96,7 @@ const ShowBooking = () => {
             ))}
           </tbody>
         </table>
+        </div>
       ) : (
         <>
           <h4 className="text-uppercase text-light not-avail fw-bold text-center mt-4">

@@ -15,6 +15,7 @@
 .bg .first-heading {
   color: rgb(255, 247, 224);
   margin-left: 60px;
+  display: inline-block;
 }
 
 .bg .brand-name {
@@ -23,6 +24,7 @@
   font-style: normal;
   color: rgb(255, 247, 224);
   letter-spacing: 1px;
+  display: inline-block;
 }
 
 .bg .second-heading {
@@ -36,4 +38,21 @@
   font-size: 15px;
 }
 
+@media (max-width: 600px) {
+  .bg {
+    height: 77vh;
+  }
+  .bg .second-heading {
+    margin-left: 0px;
+    text-align: center;
+  }
 
+  .bg .first-heading {
+    text-align: left;
+  }
+
+  .bg .brand-name {
+    text-align: center;
+    display: block;
+  }
+}

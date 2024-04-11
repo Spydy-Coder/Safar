@@ -73,7 +73,7 @@ export default function AdminPortal() {
           <div className="col-9">
             <div className="welcome-user">
               {userData ? (
-                <h4 className="welcome-text pt-3 text-muted">
+                <h4 className="welcome-text pt-0 pt-md-3 text-muted">
                   Welcome {userData.name}
                 </h4>
               ) : (
@@ -87,6 +87,7 @@ export default function AdminPortal() {
               <Link
                 to={`/tour/${data.tourId}`}
                 style={{ textDecoration: "none", color: "inherit" }}
+                
               >
                 <TourCard data={data} key={index} />
               </Link>
@@ -95,9 +96,9 @@ export default function AdminPortal() {
             ))}
           </div>
         </div>
-      ): (<h4 className="text-center text-danger">Loading {" "} <div class="spinner-border text-danger" role="status">
-      <span class="sr-only">Loading...</span>
-    </div></h4>)}
+      ): (<h3 className="text-center text-danger">Loading {"  "} <div className="spinner-border text-danger" role="status">
+       <span className="sr-only">Loading...</span>
+    </div></h3>)}
     </div>
   );
 }

@@ -53,9 +53,8 @@ export default function Tour() {
         <div className="row">
           <div className="col-12 col-md-5">
             <img
-              className="img-fluid"
+              className="img-fluid bg-image-tour"
               src={tourback}
-              style={{ minHeight: "80vh" }}
               alt="not found"
             />
           </div>
@@ -64,7 +63,7 @@ export default function Tour() {
               Navigate your adventures seamlessly
             </h5>
             <div
-              className="card my-3 tourcard "
+              className="card my-3 tourcard mx-2 mx-sm-0"
               style={{ maxWidth: "100vw" }}
               data-aos="fade-right"
               data-aos-duration="600"
@@ -140,7 +139,7 @@ export default function Tour() {
               </div>
             </div>
             <Link to={`/showbooking/${tourId}`}>
-              <button type="button" className="booking-btn">
+              <button type="button" className="booking-btn mb-4 mb-sm-0">
                 Show Bookings
               </button>
             </Link>

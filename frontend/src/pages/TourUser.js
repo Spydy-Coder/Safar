@@ -120,7 +120,6 @@ export default function TourUser() {
             <img
               className="img-fluid"
               src={tourback}
-              style={{ minHeight: "80vh" }}
               alt="not found"
               data-aos="fade-right"
             />
@@ -131,7 +130,7 @@ export default function TourUser() {
             </h5>
 
             <div
-              className="card my-3 tourcard "
+              className="card my-3 tourcard mx-2 mx-sm-0"
               style={{ maxWidth: "100vw" }}
               data-aos="fade-right"
               data-aos-duration="600"
@@ -207,7 +206,7 @@ export default function TourUser() {
               </div>
             </div>
 
-            <div className="d-flex gap-4 bottom">
+            <div className="d-flex gap-4 bottom mb-sm-0 mb-4">
               <div className="d-flex gap-3 mt-1">
                 <button className="inc-btn" onClick={handleDecrement}>
                   <CiSquareMinus color="black" size={30} />
