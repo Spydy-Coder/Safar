@@ -35,7 +35,7 @@ export default function TourUser() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/api/pin/display/${tourId}`,
+          `http://safar-production.up.railway.app/api/pin/display/${tourId}`,
           {
             method: "GET",
             headers: {
@@ -59,7 +59,7 @@ export default function TourUser() {
 
   const sendOrder = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/booking/order", {
+      const response = await fetch("http://safar-production.up.railway.app/api/booking/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

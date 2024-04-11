@@ -46,7 +46,7 @@ export default function CreateForm() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/pin/create", {
+      const response = await fetch("http://safar-production.up.railway.app/api/pin/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

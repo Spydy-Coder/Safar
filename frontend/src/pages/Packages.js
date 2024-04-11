@@ -13,12 +13,11 @@ export default function Packages() {
   useEffect(() => {
     const fetchPin = async () => {
       const response = await fetch(
-        "http://localhost:8080/api/pin/displayAllForClient",
+        "http://safar-production.up.railway.app/api/pin/displayAllForClient",
         {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
-            token: localStorage.getItem("token"),
           },
         }
       );

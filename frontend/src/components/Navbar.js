@@ -14,7 +14,7 @@ export default function Navbar() {
     if (currUser) {
       const fetchData = async () => {
         try {
-          const response = await fetch("http://localhost:8080/api/auth/check", {
+          const response = await fetch("http://safar-production.up.railway.app/api/auth/check", {
             method: "GET",
             headers: {
               "Content-Type": "application/json",

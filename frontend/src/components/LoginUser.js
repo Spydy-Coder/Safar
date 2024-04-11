@@ -12,7 +12,7 @@ function LoginUser() {
     const decode = jwtDecode(response.credential);
 
     //Making API request to make user........
-    const res = await fetch("http://localhost:8080/api/client/login", {
+    const res = await fetch("http://safar-production.up.railway.app/api/client/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
