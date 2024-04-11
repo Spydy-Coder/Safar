@@ -12,7 +12,7 @@ import com.hughes.TourManagement.service.StatsService;
 import com.hughes.dto.AdminStatsDTO;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://safar-seven.vercel.app/")
 @RequestMapping("/api/stats")
 public class StatsController {
 	

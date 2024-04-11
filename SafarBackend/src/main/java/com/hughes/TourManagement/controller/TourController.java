@@ -20,7 +20,7 @@ import com.hughes.TourManagement.model.Tour;
 import com.hughes.TourManagement.service.TourService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://safar-seven.vercel.app/")
 @RequestMapping("/api/pin")	
 public class TourController {
 	

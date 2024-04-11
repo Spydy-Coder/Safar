@@ -12,7 +12,7 @@ import com.hughes.TourManagement.model.Admin;
 import com.hughes.TourManagement.service.AdminService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://safar-seven.vercel.app/")
 @RequestMapping("/api/auth")	
 public class AdminController {
 	

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hughes.TourManagement.service.AuthService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://safar-seven.vercel.app/")
 @RequestMapping("/api/auth")
 public class AuthController {
 

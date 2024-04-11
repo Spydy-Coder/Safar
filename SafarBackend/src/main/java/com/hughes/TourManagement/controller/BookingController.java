@@ -18,7 +18,7 @@ import com.hughes.TourManagement.model.Client;
 import com.hughes.TourManagement.service.BookingService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://safar-seven.vercel.app/")
 @RequestMapping("/api/booking")
 public class BookingController {
 
