@@ -57,19 +57,19 @@ const Stats = () => {
             </div>
             <div className="d-flex flex-column gap-1 mb-4">
             <div className="row mb-4">
-              <div className="col-12 col-sm-8">
+              <div className="col-12 mb-4 mb-sm-0 col-sm-8">
                 <LineChart yearlySales={data.yearlySales} />
               </div>
 
-              <div className=" col-12 col-sm-4 ">
+              <div className=" col-12 mb-4 mb-sm-0 col-sm-4 ">
                 <PieChart tourSales={data.tourSales} />
               </div>
             </div>
             <div className="row mt-4">
-              <div className="col-12 col-sm-7">
+              <div className="col-12 mb-4 mb-sm-0 col-sm-7">
                 <BarChart monthlySales={data.monthlySales} />
               </div>
-              <div className="col-12 col-sm-5">
+              <div className="col-12 mb-4 mb-sm-0 col-sm-5">
                 <MyCalendar />
               </div>
             </div>

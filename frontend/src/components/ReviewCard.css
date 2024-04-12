@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 800px) {
-  .card {
+  .review-card {
     width: 60% !important;
   }
 }
