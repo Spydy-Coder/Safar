@@ -16,15 +16,21 @@ export default function Reviews() {
       </div>
 
       <div className="row mt-4 container-body">
-        <div className="col-12 col-sm-6" style={{ height: "100%" }}>
-          <div className="row first-card p-2 d-flex justify-content-center align-items-center" style={{ height: "31%" }}>
+        <div className="col-12 col-sm-7" style={{ height: "100%" }}>
+          <div
+            className="row first-card p-2  ms-sm-2  d-flex  align-items-center"
+            style={{ height: "31%" }}
+          >
             <ReviewCard
               username={"Bikash Dalai"}
               destination={"Goa Trip"}
               text={`Safar exceeded all expectations! Their exceptional attention to detail made our trip unforgettable. `}
             />
           </div>
-          <div className="row p-2 d-flex justify-content-center align-items-center" style={{ height: "31%" }}>
+          <div
+            className="row middle p-2   d-flex justify-content-end align-items-center"
+            style={{ height: "31%" }}
+          >
             <ReviewCard
               username={"Anshuman Saini"}
               destination={"Sikkim Trip"}
@@ -32,7 +38,10 @@ export default function Reviews() {
             breathtaking experiences. Highly recommend!`}
             />
           </div>
-          <div className="row p-2 d-flex justify-content-center align-items-center" style={{ height: "31%" }}>
+          <div
+            className="row p-2 d-flex ms-sm-2 align-items-center"
+            style={{ height: "31%" }}
+          >
             <ReviewCard
               username={"Aakash"}
               destination={"Manali Trip"}
