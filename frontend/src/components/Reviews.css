@@ -10,6 +10,16 @@
   font-size: 50px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+
+  .container-header{
+    height: 17%;
+  }
+
+  .container-body{
+    height: 83%;
+  }
+
+ 
 }
 
 .bg .first-heading {
@@ -48,6 +58,7 @@
   }
 
   .bg .first-heading {
+    margin-left: 30px;
     text-align: left;
   }
 
